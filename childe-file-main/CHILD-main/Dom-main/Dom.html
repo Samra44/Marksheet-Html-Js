@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="heading">Dom Document_Object Model</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+     <div class="item">Course_Outline</div>
+     <ul>
+        <li>Buliding Modern Website</li>
+        <li>Serach Engine Optimization</li>
+        <li>Git Hub</li>
+     </ul>
+       <h1 id="Heading_2">Hello World</h1>
+       
+       <button onclick="alter('Hello World')">Click me</button><br><br>
+       <button onclick="f1()">Click</button>
+      
+     <script>
+        
+         function f1(){
+            console.log("its a event Object")
+         }
+
+
+
+            // tag Name
+
+            let Tag_Name=document.getElementsByTagName("div")
+            console.log(Tag_Name.innerHTML)
+            let Heading_2=document.getElementById("heading_2")
+            Heading_2.innerText="We are learning Dom Object Model"
+
+
+
+
+
+
+
+
+        let Heading=document.getElementById("heading").style.background="yellow"
+        console.log(Heading.innerHTML)
+        let Item=document.getElementsByClassName("item")
+        console.log(Item[0].innerHTML)
+
+        let list=document.querySelector("li")
+        let List = document.querySelectorAll("li")
+
+        for(const iterator of list){
+            console.log(iterator.innerHTML)
+        }
+            console.log(list[2].innerHTML)
+
+     </script>
+
+</body>
+</html>

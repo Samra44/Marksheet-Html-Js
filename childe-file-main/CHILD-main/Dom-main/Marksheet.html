@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <script src="marksheet.js"></script>
+    <style>
+        h1{
+            background-color: rgb(187, 225, 225);
+        }
+        .main{
+            width: 80%;
+            height: 500px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: auto;
+        }
+        .marks{
+            width: 40%;
+            height: 400px;
+        }
+        .result{
+            width: 40%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+          <h1 >GRADE CALCULATION PROGRAM</h1>
+          <div class="main">
+            <div class="marks">
+                <label for="">Git and Github</label><br>
+                <input type="number" placeholder="Enter your marks " id="marks1"><br>
+                <label for="">Xml & JSON</label><br>
+                <input type="number" placeholder="Enter your marks " id="marks2"><br>
+                <label for="">Programing with Javascript</label><br>
+                <input type="number" placeholder="Enter your marks " id="marks3"><br>
+                <label for="">MYSQL</label><br>
+                <input type="number" placeholder="Enter your marks " id="marks4"><br>
+                <label for="">PHP</label><br>
+                <input type="number" placeholder="Enter your marks " id="marks5"><br>
+
+                <button onclick="calculation()">Calculate</button>
+            </div>
+            <div class="result">
+                <table border="1" cellspacing="0px" cellpadding="20px">
+                    <tr>
+                        <td>Total Marks</td>
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td>Obtaiined Marks</td>
+                        <td id="obt"></td>
+                    </tr>
+                    <tr>
+                        <td>Percentage</td>
+                        <td id="per"></td>
+                    </tr>
+                    <tr>
+                        <td>Grade</td>
+                        <td id="grade"></td>
+                    </tr>
+                    <tr>
+                        <td>Remarks</td>
+                        <td id="remarks"></td>
+                    </tr>
+                    
+                        
+                </table>
+
+            </div>
+            
+           
+          </div>
+</body>
+</html>
